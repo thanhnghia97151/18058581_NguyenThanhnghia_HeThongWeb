@@ -1,0 +1,25 @@
+body{
+    width: 80%;
+    align-content: center;
+    
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.ul0 li {
+    list-style: none;
+    display:  inline-block;
+    border: 1px solid black;
+}
+.ul1 {
+    list-style: none;  
+    display: none;
+    position: absolute;
+    border: 1px solid black;
+}
+.dropdown:hover .ul1{
+    display: block;
+}
+
+

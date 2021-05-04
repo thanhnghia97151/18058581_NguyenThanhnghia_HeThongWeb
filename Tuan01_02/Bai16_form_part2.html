@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <form style="width:60%;margin-left:50px;border:1px solid black" >
+            <h1 style="text-align:center">Travel reservation form</h1>
+            <h2>*denotes andotory</h2>
+            <table>
+                <tr>
+                    <td>
+                        <label for="fulname">Full name*</label><br />
+                        <input type="text" name="fullname" id="fullname" size="20" maxlength="250" placeholder="FirstName - LastName" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email address*</label><br />
+                        <input type="email" name="email" id="email" maxlength="250" size="20" placeholder="EMAIL_ADDRESS" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="tour">Select Tour Package</label><br />
+                        <select id="tour">
+                            <option>Đà Lạt</option>
+                            <option>Vũng Tàu</option>
+                            <option>Nha Trang</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="aririval">Arrival Date*</label><br />
+                        <input type="text" name="arrival" id="arrival" size="20" maxlength="250" placeholder="mm/dd" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="person">Number of persons*</label><br />
+                        <input type="text" name="persion" id="persion" size="20" maxlength="250" placeholder="UNKNOWN_TYPE" />
+                    </td>
+                </tr>
+                <tr><td><labe>What would you want to avail?*</labe></td></tr>
+                <tr><td>Boarding <input type="checkbox" id="boarding" name="boarding"></td></tr>
+                <tr><td>Fooding <input type="checkbox" id="fooding" name="fooding"></td></tr>
+                <tr><td>Sight seeing <input type="checkbox" id="sight" name="sight"></td></tr>
+                <tr>
+                    <td>
+                        <label>Discount Coupon code:</label><br />
+                        <input type="text"id="discount" name="discount" placeholder="UNKNOWN_TYPE"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Tems and conditions*</label><br />
+                        <input type="radio" id="agree" name="agree"/><label>I agree</label>
+                        <input type="radio" id="disagree" name="disagree"/><label>I disagree</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" size="40" id="submit" name="submit" value="Complete reservation"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

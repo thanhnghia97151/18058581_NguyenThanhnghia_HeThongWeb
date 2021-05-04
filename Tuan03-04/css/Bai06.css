@@ -1,0 +1,17 @@
+.container, .row {
+    width: 100%;
+}
+.row::before, .row:after {
+    display: table;
+    content: "";
+}
+.rwo::after {
+    clear:both;
+}
+.col1, .col2, .col3 {
+    float: left;
+    width: 1%;
+    margin:1%;
+    padding: 1%;
+}
+
