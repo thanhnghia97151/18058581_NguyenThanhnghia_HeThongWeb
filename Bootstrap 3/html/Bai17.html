@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link ><!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        .container-fluid{
+            width:40%;
+        }
+    </style>
+    <script>
+        function KT_Ten()
+        {
+            var t = document.getElementById("txtTen").value;
+            var reg = /^[A-Z]$/;
+            if (reg.test(t))
+            {
+                document.getElementById("check_Ten").innerHTML="dung"
+            }
+            else {
+                document.getElementById("check_Ten").innerHTML="sai"   
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <form class="form-horrizontal">
+            <div class="row ">
+                <div class="col-12 text-center mt-4">
+                    <h1 >Dang Ky</h1>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="form-group">
+                    <div  class="col-sm-11 ">
+                    
+                    <input class="form-control" type="text"  placeholder="Ho ten" id="txtTen" onblur="KT_Ten()">
+                    
+                    </div>
+                    <div class="col-sm-1"><span id="check_Ten">(*)</span></div>
+                </div>    
+            </div>
+            <div class="row " >
+                <div class="form-group">
+                    <div class="col-sm-6 ">
+                        <div >
+                            <input class="form-control" type="text" placeholder="So dien thoai">
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="col-sm-1"><span>(*)</span></div>
+                    <div class="col-sm-4 ">
+        
+                        <select class="form-control" placeholder="Chon Gioi Tinh">
+                            <option>Nam</option>
+                            <option>Nu</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-1"></div>
+                </div>
+                
+            </div>
+        </form>
+        
+    </div>
+</body>
+</html>
